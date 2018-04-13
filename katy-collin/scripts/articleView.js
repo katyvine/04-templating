@@ -2,10 +2,10 @@
 
 let articleView = {};
 
-// TODO: Where possible, refactor methods into arrow functions, including the document.ready() method at the bottom.
 
 // COMMENT: How do arrow functions affect the context of "this"? How did you determine if a function could be refactored?
 // PUT YOUR RESPONSE HERE
+// Arrow functions contectual this grabs the this outside of its parent function, in this case the window itself. Well in this case all the function's are using this, which is the articleView's objects (this)
 
 articleView.populateFilters = () => {
   $('article').each(function() {
